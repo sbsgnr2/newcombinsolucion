@@ -11,7 +11,7 @@ interface ICreateUser {
 export default async function createNewUser(formInputs: ICreateUser) {
   const { firstName, lastName, address, ssn } = formInputs
 
-  const inputValidLength = Object.values(formInputs).some(elm => elm.length <= 1)
+  const inputValidLength = Object.values(formInputs).some(elm => elm.trim().length <= 1)
 
   const ssnValid = validSSN(ssn)
 
@@ -29,7 +29,7 @@ export default async function createNewUser(formInputs: ICreateUser) {
 
   return fetchWithToken('http://localhost:8081/api/members',{
     method: "POST",
-    body: JSON.stringify({ firstName: firstName.trim(), lastName, address, ssn })
+    body: JSON.stringify({ firstName: firstName.trim(), lastName: lastName.trim(), address: address.trim(), ssn })
   })
     .then(response => {
       if(response.code === 'BadRequest'){
