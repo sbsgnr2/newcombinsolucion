@@ -1,0 +1,16 @@
+.Home {
+  text-align: center;
+}
+
+.body {
+  width: 100%;
+  height: calc(100vh - 8rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 2em 0;
+  overflow: auto;
+  box-sizing: border-box;
+}

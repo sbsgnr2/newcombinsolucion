@@ -1,0 +1,11 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper h4 {
+  width: 100%;
+  margin: 0 0 1em;
+  text-align: left;
+}

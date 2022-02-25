@@ -1,0 +1,17 @@
+.content {
+  width: 100%;
+}
+
+.content table {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+td, th {
+  border: none;
+}
+
+tr:nth-child(even) {
+  background-color: var(--backgound);
+}

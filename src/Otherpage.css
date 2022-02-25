@@ -1,0 +1,15 @@
+.otherPage {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bodyPage {
+  width: 100vw;
+  height: calc(100vh - 8rem);
+  margin: 0 auto;
+  overflow: auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
